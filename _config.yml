@@ -6,3 +6,4 @@ relative_links:
 include:
   - README.md
   - hello.md
+  - some-markdown-files/foo.md
