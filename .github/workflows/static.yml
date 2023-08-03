@@ -37,9 +37,6 @@ jobs:
         uses: jd-solanki/gh-action-md-to-html@v1.3.0
         with:
           files: '[["README.md", "index.html"]]'
-          theme: 'dark' # Optional, default: auto
-          title: 'My Website' # Optional, If title isn't provided title tag won't get added
-          favicon: 'https://github.githubassets.com/favicons/favicon-dark.png' # Optional, If favicon isn't provided favicon's link tag won't get added
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
