@@ -33,11 +33,13 @@ jobs:
         uses: actions/checkout@v3
       - name: Setup Pages
         uses: actions/configure-pages@v3
-      - name: Render markdown files to HTML
-        uses: ZacJW/markdown-html-action@1.1.0
+      - name: Convert index.md to index.html
+        uses: jd-solanki/gh-action-md-to-html@v1.3.0
         with:
-          input_files: '[["*.md"]]'
-          output_files: '["index.html"]'
+          files: '[["README.md", "index.html"]]'
+          theme: 'dark' # Optional, default: auto
+          title: 'My Website' # Optional, If title isn't provided title tag won't get added
+          favicon: 'https://github.githubassets.com/favicons/favicon-dark.png' # Optional, If favicon isn't provided favicon's link tag won't get added
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
