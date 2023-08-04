@@ -41,6 +41,13 @@ jobs:
         uses: awalsh128/cache-apt-pkgs-action@v1.3.0
         with:
           packages: pandoc
+      - name: Generate html fragments
+        run: |
+          echo I am in $(pwd)
+          for FILENAME in ./some-markdown-files; do
+            BASENAME=$(basename $FILENAME .md)
+            echo pandoc $FILENAME -o ./some-markdown-files/$BASENAME.html
+          done
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
