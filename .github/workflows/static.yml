@@ -43,10 +43,9 @@ jobs:
           packages: pandoc
       - name: Generate html fragments
         run: |
-          echo I am in $(pwd)
           for FILENAME in ./some-markdown-files/*.md; do
             BASENAME=$(basename $FILENAME .md)
-            echo pandoc $FILENAME -o ./some-markdown-files/$BASENAME.html
+            pandoc $FILENAME -o ./some-markdown-files/$BASENAME.html
           done
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
