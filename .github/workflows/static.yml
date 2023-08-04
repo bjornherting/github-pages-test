@@ -37,6 +37,10 @@ jobs:
         uses: jd-solanki/gh-action-md-to-html@v1.3.0
         with:
           files: '[["README.md", "index.html"]]'
+      - name: run private action
+        uses: ./render-markdown-action/
+        with:
+          markdown-file: 'hello'
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
