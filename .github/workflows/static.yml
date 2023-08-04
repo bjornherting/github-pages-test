@@ -37,10 +37,10 @@ jobs:
         uses: jd-solanki/gh-action-md-to-html@v1.3.0
         with:
           files: '[["README.md", "index.html"]]'
-      - name: run private action
-        uses: /workflows/render-markdown-action/
+      - name: Install pandoc
+        uses: awalsh128/cache-apt-pkgs-action@v1.3.0
         with:
-          markdown-file: 'hello'
+          packages: pandoc
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
