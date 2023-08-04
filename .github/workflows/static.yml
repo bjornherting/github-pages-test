@@ -38,7 +38,7 @@ jobs:
         with:
           files: '[["README.md", "index.html"]]'
       - name: run private action
-        uses: render-markdown-action/
+        uses: ./render-markdown-action/
         with:
           markdown-file: 'hello'
       - name: Upload artifact
