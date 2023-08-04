@@ -1,6 +1,3 @@
-# github-pages-test
+<img src="http://static.apparat.no/apparat-logo-original-black-white.png" width="400" />
 
-This is a test to see if I can generate Github Pages from markdown files
-
-
-some more text
+test test test
