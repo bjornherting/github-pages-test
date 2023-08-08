@@ -47,6 +47,10 @@ jobs:
             BASENAME=$(basename $FILENAME .md)
             pandoc $FILENAME -o ./some-markdown-files/$BASENAME.html
           done
+      - name: Generate sitemap
+        uses: cicirello/generate-sitemap@v1
+        with:
+          base-url-path: https://bjornherting.github.io/github-pages-test/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
