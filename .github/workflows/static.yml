@@ -51,6 +51,7 @@ jobs:
         uses: cicirello/generate-sitemap@v1
         with:
           base-url-path: https://bjornherting.github.io/github-pages-test/
+          additional-extensions: md
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
