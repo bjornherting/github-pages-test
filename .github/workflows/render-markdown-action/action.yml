@@ -1,8 +1,0 @@
-name: 'Markdown to html'
-inputs:
-  markdown-file:
-    required: true
-    default: ''
-runs:
-  using: 'node16'
-  main: 'dist/index.js'
