@@ -22,7 +22,7 @@ Vi oppfordrer til å sende inn pull requests dersom man ønsker å gjøre endrin
 
 ### Vår organisasjon
 
-Apparat AS er et IT-selskap med fokus på åpenhet, kunnskap, deling og nyskapning.
+> Apparat AS er et IT-selskap med fokus på åpenhet, kunnskap, deling og nyskapning.
 Åpenhet er grunnen til at du leser dette dokumentet åpent på internett, og ikke på et lukket område.
 Det er ingen hemmeligheter her - vi er stolte av det vi har å tilby!
 
