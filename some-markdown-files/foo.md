@@ -7,3 +7,6 @@ some content
 
 
 [google](https://google.com){target="_blank"}
+
+
+<a href="https://google.com" target="_blank">google</a>
